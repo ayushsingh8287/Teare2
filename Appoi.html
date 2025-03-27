@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medical Portal - Appointments</title>
+    <link rel="stylesheet" href="Appoi.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+    <!-- Sidebar -->
+    <div class="sidebar">
+        <h2>Medical Portal</h2>
+        <ul>
+            <li><a href="Home.html"> Home</a></li>
+            <li class="active">📅 Appointments</li>
+            <li>📄 Records</li>
+            <li>💊 Medications</li>
+            <li>💓 Vitals</li>
+            <li><a href="Fee.html">Profile</a></li>
+            <li>⚙️ Settings</li>
+        </ul>
+    </div>
+
+    <!-- Main Content -->
+    <div class="main-content">
+        <div class="header">
+            <h2>📅 Appointments</h2>
+            <button class="new-appointment">+ New Appointment</button>
+        </div>
+
+        <!-- Appointment Filters -->
+        <div class="filter-tabs">
+            <button class="filter active" data-filter="all">All</button>
+            <button class="filter" data-filter="upcoming">Upcoming</button>
+            <button class="filter" data-filter="past">Past</button>
+            <button class="filter" data-filter="cancelled">Cancelled</button>
+        </div>
+
+        <!-- Appointments List -->
+        <div class="appointments-list">
+            <div class="appointment upcoming">
+                <h3>Dr. Sarah Johnson</h3>
+                <p>🩺 Cardiologist</p>
+                <p>📅 Date: Wednesday, 15 May 2025</p>
+                <p>⏰ Time: 10:30 AM - 11:15 AM</p>
+                <p>📍 Location: Oakwood Medical Center</p>
+                <p>🎥 Virtual consultation available</p>
+                <button class="reschedule">Reschedule</button>
+                <button class="join-virtual">Join Virtual</button>
+            </div>
+
+            <div class="appointment past">
+                <h3>Dr. Michael Chen</h3>
+                <p>🩺 Dermatologist</p>
+                <p>📅 Date: Monday, 10 April 2025</p>
+                <p>⏰ Time: 2:00 PM - 2:45 PM</p>
+                <p>📍 Location: Green Valley Clinic</p>
+                <p>🎥 Virtual consultation available</p>
+                <button class="reschedule">Reschedule</button>
+                <button class="join-virtual">Join Virtual</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="Appoi.js"></script>
+</body>
+</html>

@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hospital Dashboard</title>
+    <link rel="stylesheet" href="Feedback.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+
+    <div class="dashboard">
+        <!-- Filters -->
+        <div class="filters">
+            <label>Day of Week:
+                <select>
+                    <option>All</option>
+                    <option>Monday</option>
+                    <option>Tuesday</option>
+                    <option>Wednesday</option>
+                </select>
+            </label>
+            <label>Department:
+                <select>
+                    <option>All</option>
+                    <option>Cardiology</option>
+                    <option>Dermatology</option>
+                </select>
+            </label>
+            <label>Date:
+                <input type="date">
+            </label>
+        </div>
+
+        <!-- Dashboard Panels -->
+        <div class="dashboard-panels">
+            <!-- Gender Feedback Pie Chart -->
+            <div class="panel">
+                <h3>Patients Feedback by Gender</h3>
+                <canvas id="genderChart"></canvas>
+            </div>
+
+            <!-- Patient Satisfaction Pie Chart -->
+            <div class="panel">
+                <h3>Patient Satisfaction</h3>
+                <canvas id="satisfactionChart"></canvas>
+            </div>
+
+            <!-- Patient Count Table -->
+            <div class="panel">
+                <h3>Patient Count by Department</h3>
+                <table>
+                    <tr>
+                        <th>Department</th>
+                        <th>Patients Count</th>
+                    </tr>
+                    <tr>
+                        <td>Cardiology</td>
+                        <td>2,344</td>
+                    </tr>
+                    <tr>
+                        <td>Dermatology</td>
+                        <td>2,321</td>
+                    </tr>
+                </table>
+            </div>
+
+            <!-- Feedback Details -->
+            <div class="panel">
+                <h3>Patient Feedback Details</h3>
+                <table>
+                    <tr>
+                        <th>Name</th>
+                        <th>Department</th>
+                        <th>Feedback</th>
+                    </tr>
+                    <tr>
+                        <td>Alen</td>
+                        <td>Cardiology</td>
+                        <td>Excellent</td>
+                    </tr>
+                    <tr>
+                        <td>Alen</td>
+                        <td>Dermatology</td>
+                        <td>Excellent</td>
+                    </tr>
+                </table>
+            </div>
+
+            <!-- Average Visit Length Bar Chart -->
+            <div class="panel">
+                <h3>Average Visit Length by Department</h3>
+                <canvas id="visitChart"></canvas>
+            </div>
+
+            <!-- Average Wait Time Bar Chart -->
+            <div class="panel">
+                <h3>Average Wait Time by Department</h3>
+                <canvas id="waitChart"></canvas>
+            </div>
+        </div>
+    </div>
+
+    <script src="Feedback.js"></script>
+</body>
+</html>

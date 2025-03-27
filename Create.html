@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medical Portal</title>
+    <link rel="stylesheet" href="Create.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <div class="container">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <h2>Medical Portal</h2>
+            <ul>
+                <li><a href="Home.html">🏠 Dashboard</a></li>
+                <li><a href="Appoi.html">📅 Appointments</a></li>
+                <li><a href="Health.html">💊 Health Reports</a></li>
+                <li><a href="Feedback.html">⚙ Feedback</a></li>
+            </ul>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="content">
+            <header>
+                <h1>Welcome, User!</h1>
+                <input type="search" placeholder="Search...">
+            </header>
+
+            <!-- Upcoming Appointment -->
+            <section class="appointment">
+                <h3>📅 Upcoming Appointment</h3>
+                <p><strong>Doctor:</strong> Dr. Sarah Johnson</p>
+                <p><strong>Date:</strong> 15 May 2024</p>
+                <p><strong>Time:</strong> 10:30 AM - 11:15 AM</p>
+                <p><strong>Location:</strong> Oakwood Medical Center</p>
+                <p><strong>Consultation:</strong> Virtual available</p>
+                <button onclick="reschedule()">Reschedule</button>
+                <button onclick="joinVirtual()">Join Virtual</button>
+            </section>
+
+            <!-- Health Summary -->
+            <section class="health-summary">
+                <h3>📊 Health Summary</h3>
+                <div class="health-box">
+                    <p>❤️ Heart Rate: <span id="heart-rate">72 bpm (Normal)</span></p>
+                    <p>🌡 Temperature: <span id="temperature">98.6°F (Normal)</span></p>
+                    <p>💨 Oxygen Level: <span id="oxygen-level">98% (Normal)</span></p>
+                </div>
+            </section>
+        </main>
+    </div>
+</body>
+</html>
